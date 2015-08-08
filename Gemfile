@@ -6,3 +6,6 @@ source "https://production.s3.rubygems.org"
 gem 'rspec'
 gem 'pry'
 gem 'cli-console'
+gem 'highline'
+gem 'building'
+gem 'i18n'
