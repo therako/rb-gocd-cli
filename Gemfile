@@ -5,3 +5,4 @@ source "https://production.s3.rubygems.org"
 
 gem 'rspec'
 gem 'pry'
+gem 'cli-console'
