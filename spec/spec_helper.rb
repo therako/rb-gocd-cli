@@ -16,6 +16,11 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+# require_relative '../app/server'
+require './config/initializers/locale'
+Dir["./lib/*"].each { |file| require file }
+# require_relative File.expand_path('../../app', __FILE__)
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

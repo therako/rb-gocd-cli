@@ -1,0 +1,6 @@
+---
+en:
+  server:
+    errors:
+      no_command: 'No commands give to the server to execute, try server help'
+      unknown_command: 'Wrong command for the server, try server help'
