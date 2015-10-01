@@ -1,5 +1,4 @@
 GEM
-  remote: https://production.s3.rubygems.org/
   specs:
     building (1.1.2)
     cli-console (0.1.4)

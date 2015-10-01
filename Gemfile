@@ -1,7 +1,4 @@
-# A sample Gemfile
-source "https://production.s3.rubygems.org"
-
-# gem "rails"
+ruby '2.1.7'
 
 gem 'rspec'
 gem 'pry'
