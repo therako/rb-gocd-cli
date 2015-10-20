@@ -18,6 +18,12 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 # require_relative '../app/server'
 require './config/initializers/locale'
+require 'pry'
+
+require 'rubygems'
+require 'test/unit'
+require 'vcr'
+
 Dir["./lib/*"].each { |file| require file }
 # require_relative File.expand_path('../../app', __FILE__)
 
@@ -98,4 +104,9 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "./spec/vcr_cassettes"
+  config.hook_into :webmock
 end

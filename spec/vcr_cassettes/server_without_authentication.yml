@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8153/go/api/agents
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8153
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 19 Oct 2015 15:33:54 GMT
+      Set-Cookie:
+      - JSESSIONID=7kmfwwqh7my21d4xfuc4e5pck;Path=/go;Expires=Mon, 02-Nov-2015 15:33:54
+        GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      X-Controller-Action:
+      - api/agents#index
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4f8b8f46-4a24-4202-b04e-fea22039de41
+      X-Runtime:
+      - '0.049000'
+      Vary:
+      - Accept-Encoding, User-Agent
+      Etag:
+      - '"27cb2119eeb16b55805cdcfac711cde3--gzip"'
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.2.11.v20150529)
+    body:
+      encoding: UTF-8
+      string: '[{"resources":["test_resource"],"sandbox":"","os":"","free_space":"Unknown","ip_address":"192.168.10.186","agent_name":"Arunkumars-MacBook-Pro.local","environments":[],"status":"Disabled","uuid":"26403954-9953-431c-aa40-2dce712d7962","build_locator":""}]'
+    http_version: 
+  recorded_at: Mon, 19 Oct 2015 15:33:54 GMT
+recorded_with: VCR 2.9.3

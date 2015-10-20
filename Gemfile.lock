@@ -1,9 +1,13 @@
 GEM
   specs:
+    addressable (2.3.8)
     building (1.1.2)
     cli-console (0.1.4)
     coderay (1.1.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
+    hashdiff (0.2.2)
     highline (1.6.21)
     i18n (0.7.0)
     method_source (0.8.2)
@@ -24,7 +28,13 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
+    safe_yaml (1.0.4)
     slop (3.6.0)
+    vcr (2.9.3)
+    webmock (1.22.1)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
@@ -36,3 +46,8 @@ DEPENDENCIES
   i18n
   pry
   rspec
+  vcr
+  webmock
+
+BUNDLED WITH
+   1.10.6
